@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/frame_clean"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="5"
+    >
+    <ListView
+        android:layout_weight="5"
+        android:id="@+id/lv_clean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        ></ListView>
+    <ProgressBar
+        android:id="@+id/clean_progressbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDrawable="@drawable/clean_progress_rotate"
+        android:indeterminateDuration="800"
+        android:indeterminateOnly="true"
+        android:indeterminate="false"
+        android:visibility="visible"
+        />
+
+</FrameLayout>

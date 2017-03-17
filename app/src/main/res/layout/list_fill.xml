@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    >
+<TextView
+    android:id="@+id/tv_list_fillleft"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="test"
+    android:textSize="18dp"
+    android:textStyle="bold"
+    android:layout_margin="10dp"
+    android:layout_centerVertical="true"
+    />
+    <TextView
+        android:id="@+id/tv_list_fillright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="计算中..."
+        android:textSize="16dp"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tv_list_fillleft"
+        android:layout_marginLeft="25dp"
+        />
+    <ImageView
+        android:id="@+id/iv_list_fill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrows_right"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:layout_marginRight="12dp"
+        android:visibility="invisible"
+        />
+
+    <ProgressBar
+        android:id="@+id/pb_list_fill"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:visibility="visible"
+        android:layout_margin="10dp"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDrawable="@drawable/clean_progress_rotate"
+        android:indeterminateDuration="800"
+        android:indeterminateOnly="true"
+        android:indeterminate="false"
+        />
+</RelativeLayout>

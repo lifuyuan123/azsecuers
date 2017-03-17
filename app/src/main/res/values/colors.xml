@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="back">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="progressbar">#00ff00</color>
+    <color name="progressbar_">#ff0000</color>
+    <color name="bulu">#09a633</color>
+    <color name="yellow">#ffa811</color>
+    <color name="bulus">#38adba</color>
+    <color name="piechar_phonespace_progressbar_bg">#FFFF8C00</color>
+
+
+
+</resources>

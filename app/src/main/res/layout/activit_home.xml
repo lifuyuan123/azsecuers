@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="12">
+    第一个板块
+
+    <include layout="@layout/include_top"></include>
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/linear1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--&gt;-->
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_home_ic_launcher"-->
+    <!--style="@style/hometop_style"-->
+    <!--android:src="@drawable/ic_launcher"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/tv_home_text1"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:textSize="@dimen/hometop_text_size"-->
+    <!--android:text="@string/手机管家"-->
+    <!--/>-->
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_home_ic_child_configs"-->
+    <!--style="@style/hometop_style"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:src="@drawable/ic_child_configs"-->
+    <!--/>-->
+    <!--</RelativeLayout>-->
+
+    <!--第二个板块-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:id="@+id/textView"
+            android:clickable="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/home_text_"
+          />
+        <com.androidy.azsecuer.activity.View.CustomProc
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:id="@+id/customPrco"
+            app:roundColor="@color/white"
+            app:roundProgressColor="@color/yellow"
+            app:roundWidth="10dp"
+            android:layout_centerInParent="true"
+            app:textColor="@color/back"
+            app:textSize="30sp"
+            app:max="360"
+            app:style="STOKE"
+            />
+
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="手机加速"
+            android:id="@+id/button"
+            android:textSize="15dp"
+            android:background="@drawable/button_"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="42dp" />
+        <!--<TextView-->
+            <!--android:id="@+id/tv_home_text2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/num"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:textSize="@dimen/homecenter_text_size"-->
+            <!--android:layout_alignBaseline="@+id/tv_home_text2_"-->
+            <!--android:layout_alignBottom="@+id/tv_home_text2_"-->
+            <!--android:layout_toRightOf="@+id/tv_home_text2_"-->
+            <!--android:layout_toEndOf="@+id/tv_home_text2_" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_home_text2_"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="8"-->
+            <!--android:textColor="@color/back"-->
+            <!--android:textStyle="bold"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="@dimen/homecenter_text_size_"-->
+            <!--android:layout_above="@+id/button"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_marginBottom="23dp" />-->
+
+
+
+    </RelativeLayout>
+
+    <!--第三个板块-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="vertical">
+        <!--第三个板块第一排-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/tv_home_text_quick"
+                style="@style/home_text_button"
+                android:drawableTop="@drawable/icon_rocket"
+                android:text="@string/手机加速" />
+
+            <TextView
+                android:id="@+id/tv_home_soft"
+                style="@style/home_text_button"
+                android:drawableTop="@drawable/icon_softmgr"
+                android:text="@string/软件管理" />
+
+            <TextView
+                android:id="@+id/tv_home_detection"
+                style="@style/home_text_button"
+                android:drawableTop="@drawable/icon_phonemgr"
+                android:text="@string/手机检测" />
+        </LinearLayout>
+
+
+        <!--第三个板块第二排-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/tv_home_text_tell"
+                style="@style/home_text_button"
+                android:drawableTop="@drawable/icon_telmgr"
+                android:text="@string/通讯大全" />
+
+            <TextView
+                android:id="@+id/tv_home_text_fill"
+                style="@style/home_text_button"
+                android:drawableTop="@drawable/icon_filemgr"
+                android:text="@string/文件管理" />
+
+            <TextView
+                android:id="@+id/tv_home_text_clean"
+                style="@style/home_text_button"
+                android:drawableTop="@drawable/icon_sdclean"
+                android:text="@string/垃圾清理" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

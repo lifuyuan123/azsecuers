@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--主界面文字配置信息-->
+    <string name="手机管家">手机管家</string>
+    <string name="手机加速">手机加速</string>
+    <string name="软件管理">软件管理</string>
+    <string name="手机检测">手机检测</string>
+    <string name="通讯大全">通讯大全</string>
+    <string name="文件管理">文件管理</string>
+    <string name="垃圾清理">垃圾清理</string>
+    <string name="设置">设置</string>
+    <string name="num">%</string>
+    <string name="开机启动">开机启动</string>
+    <string name="通知图标">通知图标</string>
+    <string name="关于我们">关于我们</string>
+    <string name="帮助说明">帮助说明</string>
+    <!--主界面其它配置信息-->
+    <dimen name="hometop_text_size">24dp</dimen>
+    <dimen name="homecenter_text_size">20dp</dimen>
+    <dimen name="homecenter_text_size_">80dp</dimen>
+    <!--导航页面信息-->
+    <style name="hometop_style">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!--按钮配置信息-->
+    <style name="home_text_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:background">@drawable/textview_border</item>
+    </style>
+
+    <!--set文本信息-->
+    <style name="setting_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="setting_imgs">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+</resources>

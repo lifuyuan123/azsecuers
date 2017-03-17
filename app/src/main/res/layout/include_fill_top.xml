@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已发现"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/tv_fill_totle_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="0 B"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:layout_gravity="center_horizontal"
+            />
+        <Button
+            android:id="@+id/bt_fill"
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="深度搜索"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:background="@drawable/fill_button"
+            />
+</LinearLayout>

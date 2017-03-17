@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context="com.androidy.azsecuer.activity.CleanActivity">
+<include layout="@layout/include_top"></include>
+    <TextView
+        android:id="@+id/tv_clean_text_home"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:text="垃圾清理"
+        android:textSize="@dimen/hometop_text_size"
+        android:gravity="center"
+        android:background="@color/bulu"
+        />
+        <!--<ListView-->
+            <!--android:layout_weight="5"-->
+            <!--android:id="@+id/lv_clean"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--&gt;</ListView>-->
+    <include layout="@layout/include_list_progressbar"
+        ></include>
+    <TextView
+        android:id="@+id/tv_clean_text_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="清理所选项"
+        android:textSize="@dimen/homecenter_text_size"
+        android:gravity="center"
+        android:background="@color/bulu"
+        />
+
+</LinearLayout>

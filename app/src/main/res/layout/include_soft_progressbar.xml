@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="内置空间（已使用/全部）"
+            android:textSize="17dp"
+
+            />
+        <com.androidy.azsecuer.activity.progressBarMove.ProgressbarMove
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:id="@+id/progressbar_soft"
+            android:progress="0"
+            android:max="100"
+
+            android:layout_below="@+id/tv_pb_one_top"
+            android:layout_gravity="center_horizontal"
+            android:progressDrawable="@drawable/soft_progressbarmove"
+
+            />
+        <TextView
+            android:id="@+id/tv_pb_one_buttom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0B/0B"
+            android:textSize="18dp"
+            android:gravity="right"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="外置空间（已使用/全部）"
+            android:textSize="17dp"
+            android:layout_marginTop="10dp"
+
+            />
+        <com.androidy.azsecuer.activity.progressBarMove.ProgressbarMove
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:id="@+id/progressbar_soft_"
+            android:progress="0"
+            android:max="100"
+            android:layout_below="@+id/tv_pb_one_top"
+            android:layout_gravity="center_horizontal"
+            android:progressDrawable="@drawable/soft_progressbarmove"
+
+            />
+        <TextView
+            android:id="@+id/tv_pb_one_buttom_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0B/0B"
+            android:textSize="18dp"
+            android:gravity="right"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

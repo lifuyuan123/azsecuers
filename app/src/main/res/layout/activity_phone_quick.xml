@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.androidy.azsecuer.activity.PhoneQuickActivity">
+    <include layout="@layout/include_top"/>
+    <include layout="@layout/include_phone_quick_home" />
+    <include layout="@layout/include_list_progressbar"/>
+    <include
+        android:id="@+id/quick_bottom_button"
+        layout="@layout/includ_phone_quick_check" />
+</LinearLayout>

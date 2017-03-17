@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="#eeeeff"
+    >
+
+    <ImageView
+        android:id="@+id/iv_set_left"
+        style="@style/hometop_style"
+        />
+    <!--android:src="@drawable/btn_homeasup_default"-->
+    <ImageView
+        android:id="@+id/iv_set_right"
+        style="@style/hometop_style"
+        android:layout_alignParentRight="true"
+        />
+    <TextView
+        android:id="@+id/tv_home_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/hometop_text_size"
+        android:text=""
+        />
+</RelativeLayout>

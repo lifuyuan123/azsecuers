@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_margin="10dp"
+    android:padding="5dp"
+    android:background="@color/white"
+    >
+<ImageView
+    android:id="@+id/im_soft_manager_list"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_launcher"
+    />
+    <TextView
+        android:id="@+id/tv_soft_packgename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="包名"
+        android:textSize="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/im_soft_manager_list"
+        android:layout_alignTop="@+id/im_soft_manager_list"
+        />
+    <TextView
+        android:id="@+id/tv_soft_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="标签"
+        android:textSize="14dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@+id/im_soft_manager_list"
+        android:layout_toRightOf="@+id/im_soft_manager_list"
+        />
+    <TextView
+        android:id="@+id/tv_soft_type"
+        android:layout_width="40dp"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:text="1.1"
+        android:gravity="right"
+        android:layout_alignParentRight="true"
+        android:textSize="18dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.androidy.azsecuer.activity.SettingActivity">
+
+<include
+  layout="@layout/include_top">
+</include>
+ <!--<ListView-->
+     <!--android:layout_width="match_parent"-->
+     <!--android:layout_height="220dp">-->
+ <!--</ListView>-->
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="55dp">
+
+  <TextView
+      android:id="@+id/tv_setting_open"
+      style="@style/setting_text"
+      android:text="@string/开机启动"
+      />
+  <ToggleButton
+      style="@style/setting_imgs"
+      android:id="@+id/toggleButton_on"
+      android:background="@drawable/check_setting"
+      android:textOff=""
+      android:layout_margin="15dp"
+      android:checked="true"
+      android:textOn=""
+      />
+ </RelativeLayout>
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="55dp">
+  <TextView
+      android:id="@+id/tv_setting_tongzhi"
+      style="@style/setting_text"
+      android:text="@string/通知图标"
+      />
+
+  <ToggleButton
+      style="@style/setting_imgs"
+      android:id="@+id/toggleButton_off"
+      android:layout_margin="15dp"
+      android:textOff=""
+      android:textOn=""
+      android:checked="false"
+      android:background="@drawable/check_setting"
+      />
+ </RelativeLayout>
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="55dp">
+  <TextView
+      android:id="@+id/tv_setting_about"
+      style="@style/setting_text"
+      android:text="@string/关于我们"
+      />
+  <ImageView
+      android:id="@+id/iv_setting_about"
+      style="@style/setting_imgs"
+      android:src="@drawable/ic_arrows_right"
+      android:padding="10dp"
+      />
+ </RelativeLayout>
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="55dp">
+  <TextView
+      android:id="@+id/tv_setting_help"
+      style="@style/setting_text"
+      android:text="@string/帮助说明"
+      />
+  <ImageView
+      android:id="@+id/iv_setting_help"
+      style="@style/setting_imgs"
+      android:src="@drawable/ic_arrows_right"
+      android:padding="10dp"
+      />
+ </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

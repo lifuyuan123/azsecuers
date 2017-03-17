@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.androidy.azsecuer.activity.TellActivityel">
+    <include
+        layout="@layout/include_top"
+        ></include>
+    <TextView
+        android:id="@+id/tv_text_tell"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="一站式号码服务平台"
+        android:gravity="center"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:background="#00DD99"
+        />
+    <ListView
+        android:id="@+id/lv_list_tell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></ListView>
+
+</LinearLayout>

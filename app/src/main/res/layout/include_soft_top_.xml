@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+        <com.androidy.azsecuer.activity.View.PiecharView
+            android:id="@+id/soft_pidcharview"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            >
+            <include layout="@layout/include_soft_linearlayout"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <include
+            layout="@layout/include_soft_progressbar"/>
+    </LinearLayout>
+
+</LinearLayout>
